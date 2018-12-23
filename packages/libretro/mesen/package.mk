@@ -44,3 +44,4 @@ makeinstall_target() {
   cp Libretro/mesen_libretro.so $INSTALL/usr/lib/libretro/
 }
 
+PKG_URL="https://github.com/SourMesen/Mesen/archive/$PKG_VERSION.tar.gz"

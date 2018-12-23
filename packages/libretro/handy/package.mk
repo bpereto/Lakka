@@ -38,3 +38,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp handy_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/libretro-handy/archive/$PKG_VERSION.tar.gz"

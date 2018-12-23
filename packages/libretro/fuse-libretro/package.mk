@@ -42,3 +42,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp fuse_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/fuse-libretro/archive/$PKG_VERSION.tar.gz"

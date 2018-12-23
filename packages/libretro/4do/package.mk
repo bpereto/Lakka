@@ -42,3 +42,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp 4do_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/4do-libretro/archive/$PKG_VERSION.tar.gz"

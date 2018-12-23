@@ -50,3 +50,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp craft_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/Craft/archive/$PKG_VERSION.tar.gz"

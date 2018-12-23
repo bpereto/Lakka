@@ -63,3 +63,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp parallel_n64_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/parallel-n64/archive/$PKG_VERSION.tar.gz"

@@ -42,3 +42,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp libretro/emux_sms_libretro.so $INSTALL/usr/lib/libretro/emux_sms_libretro.so
 }
+PKG_URL="https://github.com/libretro/emux/archive/$PKG_VERSION.tar.gz"

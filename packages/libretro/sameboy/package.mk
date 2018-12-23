@@ -43,3 +43,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp libretro/sameboy_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/sameboy/archive/$PKG_VERSION.tar.gz"

@@ -42,3 +42,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp libretro.so $INSTALL/usr/lib/libretro/imame4all_libretro.so
 }
+PKG_URL="https://github.com/libretro/imame4all-libretro/archive/$PKG_VERSION.tar.gz"

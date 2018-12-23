@@ -61,3 +61,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp desmume/src/frontend/libretro/desmume_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/desmume/archive/$PKG_VERSION.tar.gz"

@@ -39,3 +39,4 @@ makeinstall_target() {
   cp gme_libretro.so $INSTALL/usr/lib/libretro/
 }
 
+PKG_URL="https://github.com/libretro/libretro-gme/archive/$PKG_VERSION.tar.gz"

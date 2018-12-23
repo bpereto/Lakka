@@ -52,3 +52,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp scummvm_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/scummvm/archive/$PKG_VERSION.tar.gz"

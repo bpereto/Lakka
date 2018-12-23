@@ -43,3 +43,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp ../src/libretro/vbam_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/vbam-libretro/archive/$PKG_VERSION.tar.gz"

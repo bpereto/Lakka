@@ -38,3 +38,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp px68k_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/px68k-libretro/archive/$PKG_VERSION.tar.gz"

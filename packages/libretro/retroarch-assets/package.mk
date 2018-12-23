@@ -42,3 +42,4 @@ configure_target() {
 makeinstall_target() {
   make install INSTALLDIR="$INSTALL/usr/share/retroarch-assets"
 }
+PKG_URL="https://github.com/libretro/retroarch-assets/archive/$PKG_VERSION.tar.gz"

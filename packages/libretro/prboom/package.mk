@@ -38,3 +38,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp prboom_libretro.so $INSTALL/usr/lib/libretro/prboom_libretro.so
 }
+PKG_URL="https://github.com/libretro/libretro-prboom/archive/$PKG_VERSION.tar.gz"

@@ -38,3 +38,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp mednafen_ngp_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/beetle-ngp-libretro/archive/$PKG_VERSION.tar.gz"

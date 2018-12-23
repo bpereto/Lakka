@@ -212,3 +212,4 @@ post_makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/retroarch
     cp $PKG_DIR/scripts/retroarch-config $INSTALL/usr/lib/retroarch
 }
+PKG_URL="https://github.com/libretro/RetroArch/archive/$PKG_VERSION.tar.gz"

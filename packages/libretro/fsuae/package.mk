@@ -54,3 +54,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/share/fs-uae
   cp fs-uae.dat $INSTALL/usr/share/fs-uae/
 }
+PKG_URL="https://github.com/libretro/libretro-fsuae/archive/$PKG_VERSION.tar.gz"

@@ -52,3 +52,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp $PKG_BUILD/.$TARGET_NAME/dolphin_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/dolphin/archive/$PKG_VERSION.tar.gz"

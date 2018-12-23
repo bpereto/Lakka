@@ -45,3 +45,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp reminiscence_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/REminiscence/archive/$PKG_VERSION.tar.gz"

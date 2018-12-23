@@ -44,3 +44,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp tyrquake_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/tyrquake/archive/$PKG_VERSION.tar.gz"

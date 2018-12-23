@@ -46,3 +46,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp reicast_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/reicast-emulator/archive/$PKG_VERSION.tar.gz"

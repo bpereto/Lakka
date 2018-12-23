@@ -41,3 +41,4 @@ configure_target() {
 makeinstall_target() {
   make install INSTALLDIR="$INSTALL/etc/retroarch-joypad-autoconfig"
 }
+PKG_URL="https://github.com/libretro/retroarch-joypad-autoconfig/archive/$PKG_VERSION.tar.gz"

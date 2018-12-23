@@ -66,3 +66,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp ../libretro/ppsspp_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/hrydgard/ppsspp/archive/$PKG_VERSION.tar.gz"

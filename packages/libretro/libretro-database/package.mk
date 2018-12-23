@@ -41,3 +41,4 @@ configure_target() {
 makeinstall_target() {
   make install INSTALLDIR="$INSTALL/usr/share/libretro-database"
 }
+PKG_URL="https://github.com/libretro/libretro-database/archive/$PKG_VERSION.tar.gz"

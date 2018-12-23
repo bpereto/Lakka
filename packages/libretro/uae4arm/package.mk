@@ -47,3 +47,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp uae4arm_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/uae4arm-libretro/archive/$PKG_VERSION.tar.gz"

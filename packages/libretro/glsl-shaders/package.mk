@@ -41,3 +41,4 @@ configure_target() {
 makeinstall_target() {
   make install INSTALLDIR="$INSTALL/usr/share/common-shaders"
 }
+PKG_URL="https://github.com/libretro/glsl-shaders/archive/$PKG_VERSION.tar.gz"

@@ -44,3 +44,4 @@ makeinstall_target() {
   cp dist/info/*.info $INSTALL/usr/lib/libretro/
 }
 
+PKG_URL="https://github.com/libretro/libretro-super/archive/$PKG_VERSION.tar.gz"

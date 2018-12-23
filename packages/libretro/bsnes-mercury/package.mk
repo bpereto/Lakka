@@ -42,3 +42,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp out/bsnes_mercury_balanced_libretro.so $INSTALL/usr/lib/libretro/bsnes_mercury_balanced_libretro.so
 }
+PKG_URL="https://github.com/libretro/bsnes-mercury/archive/$PKG_VERSION.tar.gz"

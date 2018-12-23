@@ -45,3 +45,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp libretro/snes9x_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/snes9x/archive/$PKG_VERSION.tar.gz"

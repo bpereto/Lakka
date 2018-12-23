@@ -57,3 +57,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp *_libretro.so $INSTALL/usr/lib/libretro/mame_libretro.so
 }
+PKG_URL="https://github.com/libretro/mame/archive/$PKG_VERSION.tar.gz"

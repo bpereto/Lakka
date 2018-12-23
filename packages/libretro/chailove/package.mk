@@ -41,3 +41,4 @@ configure_target() {
 makeinstall_target() {
   make install INSTALLDIR="$INSTALL/usr/lib/libretro"
 }
+PKG_URL="https://github.com/libretro/libretro-chailove/archive/$PKG_VERSION.tar.gz"

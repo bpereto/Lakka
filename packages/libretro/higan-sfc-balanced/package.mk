@@ -43,3 +43,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp out/higan_sfc_balanced_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/libretro/nSide/archive/$PKG_VERSION.tar.gz"

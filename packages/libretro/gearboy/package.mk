@@ -22,3 +22,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp platforms/libretro/gearboy_libretro.so $INSTALL/usr/lib/libretro/
 }
+PKG_URL="https://github.com/drhelius/Gearboy/archive/$PKG_VERSION.tar.gz"

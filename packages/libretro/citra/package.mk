@@ -67,3 +67,4 @@ post_makeinstall_target() {
     done
   fi
 }
+PKG_URL="https://github.com/libretro/citra/archive/$PKG_VERSION.tar.gz"

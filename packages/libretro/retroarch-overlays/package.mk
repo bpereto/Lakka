@@ -44,3 +44,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/share/retroarch-overlays
   cp -r * $INSTALL/usr/share/retroarch-overlays
 }
+PKG_URL="https://github.com/libretro/common-overlays/archive/$PKG_VERSION.tar.gz"
