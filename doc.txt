@@ -1,0 +1,9 @@
+sudo docker run -it -v $(pwd):/root -e PROJECT=Generic -e ARCH=x86_64 -e IMAGE_SUFFIX=sandchaschte lakka make -j 8 image
+
+LINKS:
+http://www.lakka.tv/doc/Compiling-Lakka/
+https://docs.libretro.com/compilation/ubuntu/
+
+https://github.com/LibreELEC/LibreELEC.tv/tree/8.90.009
+https://wiki.libreelec.tv/compile
+
