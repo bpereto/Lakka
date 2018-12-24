@@ -57,4 +57,3 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp $PKG_BUILD/libretro/dosbox_svn_libretro.so $INSTALL/usr/lib/libretro
 }
-PKG_URL="https://github.com/libretro/vba-next/archive/$PKG_VERSION.tar.gz"
