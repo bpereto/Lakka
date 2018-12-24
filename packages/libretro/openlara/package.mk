@@ -33,6 +33,7 @@ PKG_LONGDESC="Classic Tomb Raider open-source engine"
 
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"
+PKG_TOOLCHAIN="make"
 
 make_target() {
   case $PROJECT in

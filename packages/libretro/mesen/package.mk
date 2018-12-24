@@ -33,6 +33,7 @@ PKG_LONGDESC="Mesen is a cross-platform (Windows & Linux) NES/Famicom emulator b
 
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"
+PKG_TOOLCHAIN="make"
 
 make_target() {
   make -C Libretro/

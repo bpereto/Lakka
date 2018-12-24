@@ -34,6 +34,7 @@ PKG_LONGDESC="higan emulates a number of classic video-game consoles of the 1980
 
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"
+PKG_TOOLCHAIN="make"
 
 make_target() {
   cd $PKG_BUILD/higan
@@ -44,4 +45,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp out/higan_sfc_libretro.so $INSTALL/usr/lib/libretro/
 }
-PKG_URL="https://gitlab.com/higan/higan/archive/$PKG_VERSION.tar.gz"
+PKG_URL="https://gitlab.com/higan/higan/-/archive/$PKG_VERSION.tar.gz"

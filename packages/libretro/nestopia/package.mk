@@ -34,6 +34,7 @@ PKG_LONGDESC="This project is a fork of the original Nestopia source code, plus 
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"
 PKG_USE_CMAKE="no"
+PKG_TOOLCHAIN="make"
 
 make_target() {
   cd $PKG_BUILD

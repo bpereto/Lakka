@@ -33,6 +33,7 @@ PKG_LONGDESC="Neko Project 2 (PC98 emulator) port for libretro/RetroArch"
 
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"
+PKG_TOOLCHAIN="make"
 
 make_target() {
   make -C libretro -f Makefile.libretro

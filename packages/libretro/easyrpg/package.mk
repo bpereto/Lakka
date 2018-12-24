@@ -34,6 +34,7 @@ PKG_LONGDESC="An unofficial libretro port of the EasyRPG/Player."
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"
 PKG_USE_CMAKE="no"
+PKG_TOOLCHAIN="make"
 
 make_target() {
   make -C ../builds/libretro -f Makefile.libretro

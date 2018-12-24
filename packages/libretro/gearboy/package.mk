@@ -10,6 +10,7 @@ PKG_PRIORITY="optional"
 PKG_SECTION="libretro"
 PKG_SHORTDESC="Game Boy / Gameboy Color emulator for iOS, Mac, Raspberry Pi, Windows and Linux"
 PKG_LONGDESC="Game Boy / Gameboy Color emulator for iOS, Mac, Raspberry Pi, Windows and Linux"
+PKG_TOOLCHAIN="make"
 
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"

@@ -33,6 +33,7 @@ PKG_LONGDESC="Port of Yabause to libretro."
 
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"
+PKG_TOOLCHAIN="make"
 
 make_target() {
   make -C libretro

@@ -33,6 +33,7 @@ PKG_LONGDESC="$PKG_SHORTDESC"
 
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"
+PKG_TOOLCHAIN="make"
 
 make_target() {
   cd $PKG_BUILD/nSide

@@ -34,6 +34,7 @@ PKG_LONGDESC="DS emulator, sorta"
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"
 PKG_USE_CMAKE="no"
+PKG_TOOLCHAIN="make"
 
 configure_target() {
   cd $PKG_BUILD

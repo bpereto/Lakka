@@ -34,6 +34,7 @@ PKG_LONGDESC="VBA-M is a [Super] Game Boy [Color / Advance] emulator for Windows
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"
 PKG_USE_CMAKE="no"
+PKG_TOOLCHAIN="make"
 
 make_target() {
   make -C ../src/libretro -f Makefile

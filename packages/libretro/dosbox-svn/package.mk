@@ -33,6 +33,7 @@ PKG_LONGDESC="Upstream port of DOSBox to libretro"
 
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"
+PKG_TOOLCHAIN="make"
 
 pre_configure_target() {
   strip_lto

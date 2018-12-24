@@ -30,6 +30,7 @@ PKG_PRIORITY="optional"
 PKG_SECTION="libretro"
 PKG_SHORTDESC="Port of Final Burn Alpha to Libretro (v0.2.97.38)."
 PKG_LONGDESC="Currently, FB Alpha supports games on Capcom CPS-1 and CPS-2 hardware, SNK Neo-Geo hardware, Toaplan hardware, Cave hardware, and various games on miscellaneous hardware. "
+PKG_TOOLCHAIN="make"
 
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"

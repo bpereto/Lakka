@@ -31,7 +31,7 @@ PKG_PRIORITY="optional"
 PKG_SECTION="libretro"
 PKG_SHORTDESC="RetroArch overlays"
 PKG_LONGDESC="Collection of overlay files for use with libretro frontends, such as RetroArch."
-PKG_TOOLCHAIN="manual"
+PKG_TOOLCHAIN="make"
 
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"

@@ -33,6 +33,7 @@ PKG_LONGDESC="Snes9x - Portable Super Nintendo Entertainment System (TM) emulato
 
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"
+PKG_TOOLCHAIN="make"
 
 make_target() {
   if [ "$ARCH" == "arm" ]; then

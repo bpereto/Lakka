@@ -34,6 +34,7 @@ PKG_LONGDESC="A fast and portable PSP emulator"
 PKG_IS_ADDON="no"
 PKG_AUTORECONF="no"
 PKG_USE_CMAKE="no"
+PKG_TOOLCHAIN="make"
 
 pre_configure_target() {
   strip_lto
@@ -52,7 +53,7 @@ make_target() {
   if [ "$ARCH" == "arm" ]; then
     SYSROOT_PREFIX=$SYSROOT_PREFIX AS=${CXX} make platform=armv-neon-gles
   elif [ "$ARCH" == "aarch64" ]; then
-    if [ "$OPENGL" == "no" ]; then 
+    if [ "$OPENGL" == "no" ]; then
       SYSROOT_PREFIX=$SYSROOT_PREFIX AS=${CXX} make platform=arm64-neon-gles
     else
       SYSROOT_PREFIX=$SYSROOT_PREFIX AS=${CXX} make platform=arm64-neon
@@ -66,4 +67,4 @@ makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp ../libretro/ppsspp_libretro.so $INSTALL/usr/lib/libretro/
 }
-PKG_URL="https://github.com/hrydgard/ppsspp/archive/$PKG_VERSION.tar.gz"
+PKG_URL="https://github.com/hrydgard/ppsspp.git"
