@@ -72,7 +72,7 @@
     UVESAFB_SUPPORT="yes"
 
   # Displayserver to use (x11 / no)
-    DISPLAYSERVER="x11"
+    DISPLAYSERVER="no"
 
   # KODI Player implementation to use (default / bcm2835-driver / libfslvpuwrap)
     KODIPLAYER_DRIVER="default"
@@ -98,3 +98,7 @@
   # for a list of additional drivers see packages/linux-driver-addons
   # Space separated list is supported,
     DRIVER_ADDONS="crazycat digital_devices dvb-latest"
+
+  # override some playlist core assignation
+    RA_PLAYLIST_CORES="${RA_PLAYLIST_CORES//pcsx_rearmed/mednafen_psx_hw}"
+    RA_PLAYLIST_CORES="${RA_PLAYLIST_CORES//snes9x2010/snes9x}"
