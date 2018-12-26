@@ -1,0 +1,11 @@
+# https://chromium.googlesource.com/chromiumos/third_party/mesa/+/1b74cd2af4a6ba27484b2285acec45cbd2f21390%5E%21/#F0
+--- mesa.git/src/egl/main/egldevice.h	2018-12-25 14:49:08.970168270 +0100
++++ mesa.patch/src/egl/main/egldevice.h	2018-12-25 14:48:56.450167704 +0100
+@@ -31,6 +31,7 @@
+ 
+ 
+ #include <stdbool.h>
++#include <stddef.h>
+ #include "egltypedefs.h"
+ 
+ 

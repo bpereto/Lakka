@@ -12,6 +12,8 @@ PKG_DEPENDS_TARGET="toolchain expat libdrm Mako:host"
 PKG_LONGDESC="Mesa is a 3-D graphics library with an API."
 PKG_TOOLCHAIN="meson"
 PKG_BUILD_FLAGS="+lto"
+PKG_IS_ADDON="no"
+PKG_AUTORECONF="yes"
 
 get_graphicdrivers
 
@@ -22,7 +24,7 @@ PKG_MESON_OPTS_TARGET="-Ddri-drivers=$DRI_DRIVERS \
                        -Dgallium-omx=disabled \
                        -Dgallium-nine=false \
                        -Dgallium-opencl=disabled \
-                       -Dvulkan-drivers= \
+                       -Dvulkan-drivers=auto \
                        -Dshader-cache=true \
                        -Dshared-glapi=true \
                        -Dopengl=true \
@@ -45,7 +47,11 @@ elif [ "$DISPLAYSERVER" = "weston" ]; then
   PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET wayland wayland-protocols"
   PKG_MESON_OPTS_TARGET+=" -Dplatforms=wayland,drm -Ddri3=false -Dglx=disabled"
 else
-  PKG_MESON_OPTS_TARGET+=" -Dplatforms=drm -Ddri3=false -Dglx=disabled"
+  PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET glproto dri2proto dri3proto presentproto xorgproto libXext libXdamage libXfixes libXxf86vm libxcb libX11 libxshmfence"
+  PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET systemd openssl"
+  export X11_INCLUDES=
+  PKG_MESON_OPTS_TARGET+=" -Dplatforms=x11,drm -Ddri3=true -Dglx=dri"
+  #PKG_MESON_OPTS_TARGET+=" -Dplatforms=drm -Ddri3=true -Dglx=dri"
 fi
 
 if [ "$LLVM_SUPPORT" = "yes" ]; then
@@ -81,6 +87,8 @@ if [ "$OPENGLES_SUPPORT" = "yes" ]; then
 else
   PKG_MESON_OPTS_TARGET+=" -Dgles1=false -Dgles2=false"
 fi
+
+echo $PKG_MESON_OPTS_TARGET
 
 # Temporary workaround:
 # Listed libraries are static, while mesa expects shared ones. This breaks the
