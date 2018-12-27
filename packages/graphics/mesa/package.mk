@@ -24,7 +24,6 @@ PKG_MESON_OPTS_TARGET="-Ddri-drivers=$DRI_DRIVERS \
                        -Dgallium-omx=disabled \
                        -Dgallium-nine=false \
                        -Dgallium-opencl=disabled \
-                       -Dvulkan-drivers=auto \
                        -Dshader-cache=true \
                        -Dshared-glapi=true \
                        -Dopengl=true \
@@ -47,7 +46,7 @@ elif [ "$DISPLAYSERVER" = "weston" ]; then
   PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET wayland wayland-protocols"
   PKG_MESON_OPTS_TARGET+=" -Dplatforms=wayland,drm -Ddri3=false -Dglx=disabled"
 else
-  PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET glproto dri2proto dri3proto presentproto xorgproto libXext libXdamage libXfixes libXxf86vm libxcb libX11 libxshmfence"
+  PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET glproto dri2proto dri3proto presentproto xorgproto libXext libXdamage libXfixes libXxf86vm libxcb libX11 libxshmfence libXrandr"
   PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET systemd openssl"
   export X11_INCLUDES=
   PKG_MESON_OPTS_TARGET+=" -Dplatforms=x11,drm -Ddri3=true -Dglx=dri"
@@ -88,7 +87,12 @@ else
   PKG_MESON_OPTS_TARGET+=" -Dgles1=false -Dgles2=false"
 fi
 
-echo $PKG_MESON_OPTS_TARGET
+if [ "$VULKAN_SUPPORT" = "yes" ]; then
+  PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET vulkan-headers vulkan-loader"
+  PKG_MESON_OPTS_TARGET+=" -Dvulkan-drivers=amd,intel"
+else
+  PKG_MESON_OPTS_TARGET+=" -Dvulkan-drivers="
+fi
 
 # Temporary workaround:
 # Listed libraries are static, while mesa expects shared ones. This breaks the
