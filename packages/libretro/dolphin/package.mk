@@ -24,7 +24,7 @@ PKG_REV="1"
 PKG_ARCH="x86_64"
 PKG_LICENSE="GPLv2"
 PKG_SITE="https://github.com/libretro/dolphin"
-PKG_GIT_URL="$PKG_SITE"
+PKG_URL="https://github.com/libretro/dolphin/archive/$PKG_VERSION.tar.gz"
 PKG_DEPENDS_TARGET="toolchain"
 PKG_PRIORITY="optional"
 PKG_SECTION="libretro"
@@ -46,10 +46,10 @@ PKG_CMAKE_OPTS_TARGET="-DLIBRETRO=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMP
 pre_make_target() {
   # build fix for cross-compiling Dolphin, from Dolphin forums
   find $PKG_BUILD -name flags.make -exec sed -i "s:isystem :I:g" \{} \;
+  find $PKG_BUILD -name build.ninja -exec sed -i "s:isystem :I:g" \{} \;
 }
 
 makeinstall_target() {
   mkdir -p $INSTALL/usr/lib/libretro
   cp $PKG_BUILD/.$TARGET_NAME/dolphin_libretro.so $INSTALL/usr/lib/libretro/
 }
-PKG_URL="https://github.com/libretro/dolphin/archive/$PKG_VERSION.tar.gz"
